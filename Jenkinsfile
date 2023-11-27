@@ -15,12 +15,5 @@ pipeline {
                 }
             }
         }
-        stage('Deploy') {
-            steps {
-                 withMaven(maven : 'maven_4_0_0') {
-                      sh 'mvn deploy'
-                 }
-            }
-        }
     }
 }
